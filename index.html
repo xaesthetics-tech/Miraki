@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#173b30">
+  <meta name="description" content="Miraki — Hair, skin, makeup, bridal and nail services.">
+  <title>Miraki | Hair • Skin • Makeup • Bridal • Nails</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&family=Parisienne&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <a class="brand" href="#home" aria-label="Miraki home">
+    <span class="brand-script">Miraki</span>
+    <span class="brand-sub">HAIR <i>•</i> SKIN <i>•</i> MAKEUP</span>
+  </a>
+
+  <div class="header-note">NEW DELHI <span>/</span> TO BE ADDED</div>
+
+  <button class="menu-toggle" aria-label="Open navigation"
+          aria-expanded="false" aria-controls="site-nav">
+    <span></span><span></span>
+  </button>
+
+  <div class="nav-overlay" hidden></div>
+
+  <nav class="site-nav" id="site-nav" aria-label="Main navigation" aria-hidden="true">
+    <div class="drawer-top">
+      <span class="drawer-label">EXPLORE MIRAKI</span>
+      <button class="menu-close" aria-label="Close navigation">×</button>
+    </div>
+    <a href="#home"><small>01</small> Home <span>⇗</span></a>
+    <a href="#gallery"><small>02</small> Our Gallery <span>⇗</span></a>
+    <a href="#services"><small>03</small> Our Services <span>⇗</span></a>
+    <a href="#contact"><small>04</small> Contact <span>⇗</span></a>
+    <a href="#enquiry"><small>05</small> Book Appointment <span>⇗</span></a>
+    <p class="drawer-foot">HAIR • SKIN • MAKEUP</p>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- HOME -->
+  <section class="page active" id="home" data-page="home">
+
+    <section class="hero">
+      <div class="hero-image" role="img" aria-label="Luxury beauty atelier interior"></div>
+      <div class="hero-shade"></div>
+
+      <div class="hero-content">
+        <p class="eyebrow light">A MODERN BEAUTY ATELIER</p>
+        <h1>Beauty,<br>beautifully<br><em>considered.</em></h1>
+        <p class="hero-copy">
+          A refined space for hair, skin, makeup, bridal and nail services.
+          Thoughtful beauty rituals, crafted around you.
+        </p>
+        <a class="button button-light" href="#enquiry">
+          BEGIN YOUR EXPERIENCE <span>⇗,</span>
+        </a>
+      </div>
+
+      <div class="hero-bottom">
+        <span>AN INVITATION TO FEEL YOURSELF</span>
+        <span>01 — 05</span>
+      </div>
+    </section>
+
+    <div class="marquee" aria-label="Beauty, elegance, dignity, confidence, grace, self care, radiance, intention, radiance">
+      <div class="marquee-track">
+        <span>BEAUTY <b>✦</b> ELEGANCE <b>✦</b> DIGNITY <b>✦</b> CONFIDENCE <b>✦</b> GRACE <b>✦</b> SELF CARE <b>✦</b> RADIANCE <b>✦</b> INTENTION <b>✦</b> GLOW <b>✦</b></span>
+        <span aria-hidden="true">BEAUTY <b>✦</b> ELEGANCE <b>✦</b> DIGNITY <b>✦</b> CONFIDENCE <b>✦</b> GRACE <b>✦</b> SELF CARE <b>✦</b> RADIANCE <b>✦</b> INTENTION <b>✦</b> GLOW <b>✦</b></span>
+      </div>
+    </div>
+
+    <section class="about section-pad">
+      <div class="about-photo image-frame">
+        <img src="https://i.ibb.co/Gvwb91FD/Screenshot-20260922-083249-Maps.jpg"
+             alt="Serene salon interior" loading="lazy">
+        <span class="image-index">THE MIRAKI SPACE / 01</span>
+      </div>
+
+      <div class="about-copy">
+        <p class="eyebrow">ABOUT THE ATELIER</p>
+        <h2>Where beauty<br>meets <em>intention.</em></h2>
+        <p>
+          At Miraki, every detail is designed to make you feel seen,
+          cared for and confident. From a considered consultation to
+          the final touch, our artists bring precision and warmth to
+          every appointment.
+        </p>
+        <a class="text-link" href="#contact">DISCOVER MIRAKI <span>⇗</span></a>
+        <div class="signature">Miraki</div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Atelier highlights">
+      <div class="stats-intro">
+        <p class="eyebrow light">OUR WORLD, IN MOMENTS</p>
+        <h2>Care that stays<br><em>with you.</em></h2>
+      </div>
+      <div class="stat">
+        <strong>To be added</strong>
+        <span>Years of experience</span>
+      </div>
+      <div class="stat">
+        <strong>To be added</strong>
+        <span>Happy clients</span>
+      </div>
+      <div class="stat">
+        <strong>To be added</strong>
+        <span>Beauty moments</span>
+      </div>
+    </section>
+
+    <section class="services-preview section-pad">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">A CONSIDERED COLLECTION</p>
+          <h2>Our signature<br><em>services.</em></h2>
+        </div>
+        <p>A complete beauty experience, from everyday refinement to your most important occasions.</p>
+      </div>
+
+      <div class="service-cards" id="home-service-cards"></div>
+
+      <a class="text-link centered-link" href="#services">
+        VIEW ALL SERVICES <span>⇗</span>
+      </a>
+    </section>
+
+    <section class="closing-cta">
+      <p class="eyebrow light">YOUR MOMENT BEGINS HERE</p>
+      <h2>A little time<br><em>just for you.</em></h2>
+      <a class="button button-light" href="#enquiry">MAKE AN ENQUIRY <span>⇗</span></a>
+    </section>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="page inner-page" id="gallery" data-page="gallery" hidden>
+    <header class="page-banner">
+      <p class="eyebrow light">THE VISUAL DIARY</p>
+      <h1>Work <em>gallery.</em></h1>
+      <span class="banner-mark">A / 02</span>
+    </header>
+
+    <section class="gallery-intro section-pad">
+      <div>
+        <p class="eyebrow">A STUDY IN BEAUTY</p>
+        <h2>A little<br><em>inspiration.</em></h2>
+      </div>
+      <p>A collection of beauty moments, transformations and details from our atelier.</p>
+    </section>
+
+    <section class="gallery-grid section-pad" aria-label="Beauty gallery">
+
+      <figure class="gallery-item tall">
+        <img loading="lazy"
+             src="https://i.ibb.co/Gvwb91FD/Screenshot-20260922-083249-Maps.jpg"
+             alt="Miraki salon">
+        <figcaption>
+          <span>01 / MIRAKI</span>
+          <b>To be added</b>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img loading="lazy"
+             src="https://i.ibb.co/Gf9jG0Rf/ee2ee1a44a4ed466cbfdc2eb565a8ebb.jpg"
+             alt="Miraki salon">
+        <figcaption>
+          <span>02 / MIRAKI</span>
+          <b>To be added</b>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img loading="lazy"
+             src="https://i.ibb.co/Y4wxzfy8/Screenshot-20260922-083502-Maps.jpg"
+             alt="Miraki salon">
+        <figcaption>
+          <span>03 / MIRAKI</span>
+          <b>To be added</b>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item wide">
+        <img loading="lazy"
+             src="https://i.ibb.co/WWJw2bnY/Screenshot-20260922-083309-Maps.jpg"
+             alt="Miraki salon">
+        <figcaption>
+          <span>04 / MIRAKI</span>
+          <b>To be added</b>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img loading="lazy"
+             src="https://i.ibb.co/ymDLZvzd/9d89f234381d546feea0063178951d55.jpg"
+             alt="Miraki salon">
+        <figcaption>
+          <span>05 / MIRAKI</span>
+          <b>To be added</b>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item tall">
+        <img loading="lazy"
+             src="https://i.ibb.co/wNmgsCCj/Screenshot-20260922-083324-Maps.jpg"
+             alt="Miraki salon">
+        <figcaption>
+          <span>06 / MIRAKI</span>
+          <b>To be added</b>
+        </figcaption>
+      </figure>
+
+      <figure class="gallery-item">
+        <img loading="lazy"
+             src="https://i.ibb.co/0pMRbJHS/Screenshot-20260922-083241-Maps.jpg"
+             alt="Miraki salon">
+        <figcaption>
+          <span>07 / MIRAKI</span>
+          <b>To be added</b>
+        </figcaption>
+      </figure>
+
+    </section>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="page inner-page" id="services" data-page="services" hidden>
+    <header class="page-banner">
+      <p class="eyebrow light">THE BEAUTY MENU</p>
+      <h1>Our <em>services.</em></h1>
+      <span class="banner-mark">A / 03</span>
+    </header>
+
+    <section class="services-intro section-pad">
+      <div>
+        <p class="eyebrow">A PERSONAL APPROACH</p>
+        <h2>Made for<br><em>your ritual.</em></h2>
+      </div>
+      <p>Every service begins with a conversation and ends with a little more confidence.</p>
+    </section>
+
+    <section class="service-menu section-pad" id="service-menu"></section>
+    <p class="menu-note">Service details and pricing: To be added.</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="page inner-page" id="contact" data-page="contact" hidden>
+    <header class="page-banner">
+      <p class="eyebrow light">COME SAY HELLO</p>
+      <h1>Contact <em>us.</em></h1>
+      <span class="banner-mark">A / 04</span>
+    </header>
+
+    <section class="contact-main section-pad">
+      <div class="contact-title">
+        <p class="eyebrow">WE WOULD LOVE TO HEAR FROM YOU</p>
+        <h2>Let's create<br>something <em>beautiful.</em></h2>
+        <p>Questions, consultations or a little help choosing your next ritual? Reach out to us.</p>
+      </div>
+
+      <div class="contact-details">
+
+        <div class="contact-block">
+          <span class="eyebrow">ADDRESS</span>
+          <p>
+            T-47, New Rohtak Rd<br>
+            Ratan Nagar, Karol Bagh, New Delhi, Delhi 110005
+          </p>
+        </div>
+
+        <div class="contact-block">
+          <span class="eyebrow">PHONE</span>
+          <a href="tel:+918700173741">+91 87001 73741 ⇗</a>
+        </div>
+
+        <div class="contact-block">
+          <span class="eyebrow">EMAIL</span>
+          <a href="#contact">To be added ⇗</a>
+        </div>
+
+        <div class="contact-block">
+          <span class="eyebrow">WORKING HOURS</span>
+          <p>Monday – Sunday<br>10:30 – 20:30</p>
+        </div>
+
+        <div class="contact-block">
+          <span class="eyebrow">WHATSAPP</span>
+          <a href="https://wa.me/918700173741"
+             target="_blank"
+             rel="noopener">
+            Start a conversation ⇗
+          </a>
+        </div>
+
+        <div class="contact-block">
+          <span class="eyebrow">INSTAGRAM</span>
+          <p>To be added</p>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="contact-bottom">
+      <span>WE LOOK FORWARD TO WELCOMING YOU</span>
+      <a href="#enquiry">BOOK AN APPOINTMENT ⇗</a>
+    </div>
+  </section>
+
+  <!-- ENQUIRY -->
+  <section class="page inner-page" id="enquiry" data-page="enquiry" hidden>
+    <header class="page-banner">
+      <p class="eyebrow light">YOUR NEXT BEAUTY MOMENT</p>
+      <h1>Make an <em>enquiry.</em></h1>
+      <span class="banner-mark">A / 05</span>
+    </header>
+
+    <section class="enquiry-layout section-pad">
+
+      <div class="enquiry-copy">
+        <p class="eyebrow">A MOMENT, MADE FOR YOU</p>
+        <h2>Tell us what<br>you <em>need.</em></h2>
+        <p>
+          Complete the form and our team will contact you to confirm
+          availability and discuss your preferences.
+        </p>
+
+        <div class="enquiry-note">
+          <span>01</span>
+          <p>Share a few details. We'll take it from there.</p>
+        </div>
+      </div>
+
+      <form class="enquiry-form" id="enquiry-form" novalidate>
+
+        <p class="form-kicker">BOOK YOUR VISIT.</p>
+
+        <div class="form-grid">
+
+          <label>
+            Full name
+            <input name="name"
+                   autocomplete="name"
+                   required
+                   placeholder="Your name">
+          </label>
+
+          <label>
+            Phone
+            <input name="phone"
+                   type="tel"
+                   autocomplete="tel"
+                   inputmode="tel"
+                   required
+                   placeholder="+91">
+          </label>
+
+          <label>
+            Email
+            <input name="email"
+                   type="email"
+                   autocomplete="email"
+                   placeholder="you@example.com">
+          </label>
+
+          <label>
+            Service
+            <select name="service" id="service-select" required>
+              <option value="">Choose a service</option>
+            </select>
+          </label>
+
+          <label>
+            Preferred date
+            <input name="date"
+                   id="preferred-date"
+                   type="date"
+                   required>
+          </label>
+
+          <label class="full">
+            Message
+            <textarea name="message"
+                      rows="4"
+                      placeholder="Tell us a little about what you have in mind…"></textarea>
+          </label>
+
+        </div>
+
+        <button class="button button-dark" type="submit">
+          SEND ENQUIRY <span>↗</span>
+        </button>
+
+        <p class="form-disclaimer">
+          Your enquiry will open WhatsApp with the details you provide.
+        </p>
+
+        <div class="form-status"
+             id="form-status"
+             role="status"
+             aria-live="polite"
+             hidden></div>
+
+      </form>
+
+    </section>
+  </section>
+
+</main>
+
+<a class="floating-contact" href="#contact">
+  Connect! <span>⇗</span>
+</a>
+
+<footer class="site-footer">
+
+  <div class="footer-top">
+
+    <a class="footer-brand" href="#home">
+      <span class="brand-script">Miraki</span>
+      <span class="brand-sub">HAIR <i>•</i> SKIN <i>•</i> MAKEUP</span>
+    </a>
+
+    <p>
+      Beauty is an experience,<br>
+      <em>not just a service.</em>
+    </p>
+
+    <div class="footer-contact">
+      <a href="tel:+918700173741">+91 87001 73741</a>
+
+      <a href="https://wa.me/918700173741"
+         target="_blank"
+         rel="noopener">
+        WhatsApp ⇗
+      </a>
+
+      <span>To be added</span>
+      <span>Instagram: To be added</span>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+
+    <nav aria-label="Footer navigation">
+      <a href="#home">Home</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+      <a href="#enquiry">Book Appointment</a>
+    </nav>
+
+    <span>
+      © <span id="copyright-year"></span> Miraki
+    </span>
+
+  </div>
+
+</footer>
+
+</body>
+</html>
